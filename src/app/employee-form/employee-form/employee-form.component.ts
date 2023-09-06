@@ -33,7 +33,6 @@ export class EmployeeFormComponent implements OnInit {
   }
 
   onSubmit(employeeForm: FormGroup): void{
-    if (this.employeeForm.valid) {
       this.employee={ 
        firstName :this.employeeForm.value.fname,
        lastName :this.employeeForm.value.lname,
@@ -59,7 +58,6 @@ export class EmployeeFormComponent implements OnInit {
       }
       );
     
-    }
   }
 
   clear():void {

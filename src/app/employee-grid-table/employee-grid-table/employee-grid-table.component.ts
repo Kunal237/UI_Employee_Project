@@ -22,21 +22,20 @@ export class EmployeeGridTableComponent implements OnInit {
   }
 
   public getALlEmployees(){
-    // this.employeeAllStream=
     this.employeeService.getAllEmployees().subscribe((response): void=>{
       this.employeeAllStream=response;
     })
     }
 
-    public getEmployeeById(data:Employee){
-      this.employeeStream=this.employeeService.getEmployeeById(data.eid?data.eid:0).pipe(
-        catchError((error) => {
-          console.log('error',error)
-          this.employeeStreamError.next(true);
-          return of();
-        }),
-      );
-    }
+    // public getEmployeeById(eid:number){
+    //   this.employeeStream=this.employeeService.getEmployeeById(eid).pipe(
+    //     catchError((error) => {
+    //       console.log('error',error)
+    //       this.employeeStreamError.next(true);
+    //       return of();
+    //     }),
+    //   );
+    // }
   
 
 public deleteEmployee(data:Employee){

@@ -4,5 +4,5 @@ export interface Employee{
     lastName:string;
     emailId:string;
     address:string;
-    mobileNumber:number;
+    mobileNumber:string;
 }

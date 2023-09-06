@@ -9,6 +9,7 @@ import { EmployeeGridTableComponent } from './employee-grid-table/employee-grid-
 import { EmployeeServiceService } from './employee-service/employee-service.service';
 import { EmployeeFilterPipe } from './employee-grid-table/EmployeeFilterPipe';
 import { ErrorMessageComponent } from './error-message/error-message/error-message.component';
+import { EmployeeModelComponent } from './employee-model/employee-model.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ErrorMessageComponent } from './error-message/error-message/error-messa
     EmployeeFormComponent,
     EmployeeGridTableComponent,
     EmployeeFilterPipe,
-    ErrorMessageComponent
+    ErrorMessageComponent,
+    EmployeeModelComponent
   ],
   imports: [
     BrowserModule,
